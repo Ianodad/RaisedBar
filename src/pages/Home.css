@@ -1,0 +1,12 @@
+/* this contains style sheet for home page */
+
+.create{
+    border-radius: 25px;
+    background-image: url("../img/home/flask.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* position: fixed;  */
+}
