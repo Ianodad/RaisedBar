@@ -3,11 +3,12 @@ import Layout from "../component/Layout"
 import Modal from 'react-modal';
 
 
-import detailApi from '../api/cocktaildb'
+import cocktaildb from '../api/cocktaildb'
 import Search from '../component/Search';
 import Button from '../component/Common/Button/Button';
 
 import './Home.css'
+import Card from '../component/Common/showCard/Card';
 
 const customStyles = {
   content : {
@@ -17,8 +18,8 @@ const customStyles = {
     bottom : 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: 650,
-    height : 650
+    width: '80%',
+    height : '80%'
   }
 };
 
@@ -26,13 +27,19 @@ class Home extends Component {
 
   constructor(props) {
         super(props);
-        this.state = { modalIsOpen: false};
+        this.state = { cocktail: [], modalIsOpen: true};
   }
 
+  // load the initial state of the component 
   componentDidMount= async ()=>{
-    console.log(await detailApi.getCocktailDetail('11007'))
+    // console.log(await cocktaildb.getCocktailDetail('11007'))
+    const {data} = await cocktaildb.getByCategory('Cocktail')
+    this.setState({ cocktails:data.drinks });
+    // console.log(data)
+
   }
 
+  // open modal function
   openModal =()=> {
       this.setState({ modalIsOpen: true });
   }
@@ -42,12 +49,15 @@ class Home extends Component {
     // subtitle.style.color = '#f00';
   }
 
+  // close model function
   closeModal=()=> {
       this.setState({ modalIsOpen: false });
   }
   
 
     render() {
+      const { cocktails }= this.state
+      console.log(cocktails)
         return (
           <Layout>
             <div class="container">
@@ -58,9 +68,15 @@ class Home extends Component {
               style={customStyles}
               contentLabel="Example Modal"
               >
-                <h2>Modal title</h2>
-                <p>Modal </p>
-                <button onClick={()=>this.closeModal()}>Close</button>
+                <div class="container-fluid">
+                <h2 className="text-center">Modal title</h2>
+                <button className="float-lg-right" style={{zIndex:'2'}} onClick={()=>this.closeModal()}>Close</button>
+                <div className="content d-flex flex-wrap">
+                  {cocktails && cocktails.map((cocktail) => (
+                      <Card data={cocktail}/>
+                  ))}
+                </div>
+                </div>
               </Modal>
               <div className="search-bar position-absolute container" style={{top: "30%"}}>
                 <Search/>
