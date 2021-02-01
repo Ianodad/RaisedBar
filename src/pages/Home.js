@@ -44,10 +44,7 @@ class Home extends Component {
       this.setState({ modalIsOpen: true });
   }
 
-  afterOpenModal=()=> {
-    // references are now sync'd and can be accessed.
-    // subtitle.style.color = '#f00';
-  }
+
 
   // close model function
   closeModal=()=> {
@@ -63,7 +60,7 @@ class Home extends Component {
             <div class="container">
               <Modal 
               isOpen={this.state.modalIsOpen}
-              onAfterOpen={this.afterOpenModal}
+              // onAfterOpen={this.afterOpenModal}
               onRequestClose={this.closeModal}
               style={customStyles}
               contentLabel="Example Modal"

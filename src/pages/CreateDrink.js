@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Layout from "../component/Layout/index";
 import { Formik } from "formik";
+import firebase from '../firebase'
+import nextId from "react-id-generator";
+
+
 import * as Yup from 'yup';
 
 
@@ -13,8 +17,47 @@ const validationSchema = Yup.object().shape({
 
 class CreateDrink extends Component {
 
+  componentDidMount= async()=>{
+    
+    return firebase.firestore().collection("Cocktail")
+      .doc("DrinksCreated")
+      .set({
+        timecreate: firebase.firestore.FieldValue.serverTimestamp(),
+        drinkName:'coke',
+        ingredient1: "water",
+        ingredient2: 'ice',
+        ingredient3: "sugar",
+        instructions:"mix all together"
+      })
+      .then(function () {
+        console.log("Document successfully written!");
+      })
+      .catch(function (error) {
+        console.error("Error writing document: ", error);
+      });
+
+  }
+
     handleCreateDrink = ({drinkName, ingredient1, ingredient2, ingredient3, instructions}) => {
       console.log(drinkName, ingredient1, ingredient2, ingredient3, instructions)
+     return firebase.firestore().collection("Cocktail")
+      .doc(drinkName)
+      .set({
+        idDrink:  nextId(),
+        timeCreate: firebase.firestore.FieldValue.serverTimestamp(),
+        drinkName: drinkName,
+        ingredient1: ingredient1,
+        ingredient2: ingredient2,
+        ingredient3: ingredient3,
+        instructions: instructions
+      })
+      .then(function () {
+        console.log("Document successfully written!");
+        window.location = "/";
+      })
+      .catch(function (error) {
+        console.error("Error writing document: ", error);
+      });
      
     };
   render() {
