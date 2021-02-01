@@ -22,7 +22,7 @@
 }
 
 .nav div.logo a:hover {
-    color: #e61b00;
+    color: #00E676;
 }
 
 .nav div.main_list {
@@ -48,13 +48,13 @@
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
     line-height: 65px;
     font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #e62300;
+    color: #00E676;
 }
 
 

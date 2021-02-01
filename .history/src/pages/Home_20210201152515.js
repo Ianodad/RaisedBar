@@ -125,6 +125,7 @@ class Home extends Component {
                 <div className="modal-header row">
                 {renderModalTitle()}
                 <button className="float-lg-right col-1" style={{zIndex:4}} onClick={()=>this.closeModal()}>Close</button>
+                  
                 </div>
                 <div className="content d-flex flex-wrap">
                   {renderModalContent()}

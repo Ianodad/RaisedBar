@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Card.css';
 
 const Card = ({data}) => {
-    // console.log(data)
+    console.log(data)
     return (
        <Link to={`/details/${data.idDrink}`}> 
        <div className="profile-card-2 mx-2">

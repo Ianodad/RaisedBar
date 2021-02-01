@@ -103,14 +103,6 @@ class Home extends Component {
         )
       }
     }
-    const renderModalTitle=()=>{
-      if (search){
-          return( <h2 className="text-center col-11">Search Results</h2>)
-      } else {
-        return( <h2 className="text-center col-11">Cocktail Catalog</h2>)
-      }
-
-    }
         return (
           <Layout>
             <div class="container">
@@ -123,8 +115,9 @@ class Home extends Component {
               >
                 <div class="container-fluid">
                 <div className="modal-header row">
-                {renderModalTitle()}
-                <button className="float-lg-right col-1" style={{zIndex:4}} onClick={()=>this.closeModal()}>Close</button>
+                <h2 className="text-center col-9">Modal title</h2>
+                <button className="float-lg-right" style={{zIndex:4}} onClick={()=>this.closeModal()}>Close</button>
+                  
                 </div>
                 <div className="content d-flex flex-wrap">
                   {renderModalContent()}

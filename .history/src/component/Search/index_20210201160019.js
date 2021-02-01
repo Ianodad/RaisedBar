@@ -20,7 +20,7 @@ class search extends Component {
         const {onSearch}=this.props
         return (
           <div className="container">
-            <h5 style={{color:"white", fontWeight:"900"}}>Search Drink</h5>
+            <h5 style={}>Search Drink</h5>
             <div className="row">
               <div className="col-12">
                 <Formik

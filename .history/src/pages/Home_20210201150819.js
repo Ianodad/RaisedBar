@@ -81,7 +81,7 @@ class Home extends Component {
     render() {
       const { cocktails, search, searchData }= this.state
 
-     // renders card view for modal base on search or straight from cocktaildb 
+     // renders card view for modal base on search or  
      const renderModalContent = ()=>{
       if(search){
         if (!searchData){
@@ -103,14 +103,6 @@ class Home extends Component {
         )
       }
     }
-    const renderModalTitle=()=>{
-      if (search){
-          return( <h2 className="text-center col-11">Search Results</h2>)
-      } else {
-        return( <h2 className="text-center col-11">Cocktail Catalog</h2>)
-      }
-
-    }
         return (
           <Layout>
             <div class="container">
@@ -122,10 +114,8 @@ class Home extends Component {
               contentLabel="Example Modal"
               >
                 <div class="container-fluid">
-                <div className="modal-header row">
-                {renderModalTitle()}
-                <button className="float-lg-right col-1" style={{zIndex:4}} onClick={()=>this.closeModal()}>Close</button>
-                </div>
+                <h2 className="text-center">Modal title</h2>
+                <button className="float-lg-right" style={{zIndex:'2'}} onClick={()=>this.closeModal()}>Close</button>
                 <div className="content d-flex flex-wrap">
                   {renderModalContent()}
                 </div>

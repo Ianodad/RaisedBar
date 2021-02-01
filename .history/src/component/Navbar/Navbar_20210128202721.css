@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px; */
+}
 
 .nav {
     width: 100%;
@@ -22,7 +31,7 @@
 }
 
 .nav div.logo a:hover {
-    color: #e61b00;
+    color: #00E676;
 }
 
 .nav div.main_list {
@@ -48,13 +57,13 @@
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
     line-height: 65px;
     font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #e62300;
+    color: #00E676;
 }
 
 
