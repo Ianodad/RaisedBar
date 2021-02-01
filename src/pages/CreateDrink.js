@@ -17,7 +17,7 @@ const validationSchema = Yup.object().shape({
 
 class CreateDrink extends Component {
 
-  componentDidMount= async()=>{
+  componentDidMount = async()=>{
     
     return firebase.firestore().collection("Cocktail")
       .doc("DrinksCreated")
@@ -63,16 +63,26 @@ class CreateDrink extends Component {
   render() {
     return (
       <Layout className="container-fluid h-100">
-        <div className="card card-outline-secondary mx-auto" style={{top:'20%', width:'30%'}}>
+        <div
+          className="card card-outline-secondary mx-auto"
+          style={{ top: "20%", width: "30%" }}
+        >
           <div className="card-header">
             <h3 className="mb-0 text-center">Create Drink</h3>
           </div>
           <div className="card-body mx-auto">
             <Formik
-              initialValues={{ drinkName: "", ingredient1: "", ingredient2: "", ingredient3: "", instructions:"" }}
+              initialValues={{
+                drinkName: "",
+                ingredient1: "",
+                ingredient2: "",
+                ingredient3: "",
+                file:"",
+                instructions: "",
+              }}
               validate={this.validationSchema}
               onSubmit={(values) => {
-               this.handleCreateDrink(values)
+                this.handleCreateDrink(values);
               }}
             >
               {({
@@ -82,13 +92,18 @@ class CreateDrink extends Component {
                 handleSubmit,
                 isSubmitting,
               }) => (
-                <form className="form" role="form" autoComplete="off" onSubmit={handleSubmit}>
+                <form
+                  className="form"
+                  role="form"
+                  autoComplete="off"
+                  onSubmit={handleSubmit}
+                >
                   <div className="form-group">
                     <label htmlFor="inputName">Name</label>
                     <input
                       type="text"
                       name="drinkName"
-                      onChange={handleChange('drinkName')}
+                      onChange={handleChange("drinkName")}
                       onBlur={handleBlur}
                       // value={values.drinkName}
                       className="form-control"
@@ -101,7 +116,7 @@ class CreateDrink extends Component {
                     <input
                       type="text"
                       className="form-control"
-                      onChange={handleChange('ingredient1')}
+                      onChange={handleChange("ingredient1")}
                       // value={values.ingredient1}
                       onBlur={handleBlur}
                       id="ingredient1"
@@ -115,7 +130,7 @@ class CreateDrink extends Component {
                       type="text"
                       className="form-control"
                       // value={values.ingredient2}
-                      onChange={handleChange('ingredient2')}
+                      onChange={handleChange("ingredient2")}
                       onBlur={handleBlur}
                       id="ingredient2"
                       placeholder="Ingredient Two"
@@ -128,11 +143,21 @@ class CreateDrink extends Component {
                       type="text"
                       className="form-control"
                       // value={values.ingredient3}
-                      onChange={handleChange('ingredient3')}
+                      onChange={handleChange("ingredient3")}
                       onBlur={handleBlur}
                       id="ingredient3"
                       placeholder="Ingredient Three"
                       required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label for="file">File upload</label>
+                    <input
+                      id="file"
+                      name="file"
+                      type="file"
+                      onChange={handleChange("file")}
+                      className="form-control"
                     />
                   </div>
                   <div className="form-group">
@@ -141,7 +166,7 @@ class CreateDrink extends Component {
                       type="text"
                       className="form-control"
                       // value={values.instructions}
-                      onChange={handleChange('instructions')}
+                      onChange={handleChange("instructions")}
                       id="instructions"
                       placeholder="Instructions"
                       rows="5"

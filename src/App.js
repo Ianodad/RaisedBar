@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import Home from "./pages/Home";
 import Details from "./pages/Details";
 import CreateDrink from "./pages/CreateDrink";
+import SearchPage from "./pages/SearchPage";
 
 
 import NotFound from "./pages/NotFound";
@@ -19,6 +20,7 @@ class App extends Component {
 					<Route path='/' exact component={Home} />
 					<Route exact path='/details/:id' component={Details}/>
           <Route exact path='/create-drink' component={CreateDrink}/>
+          <Route exact path='/search' component={SearchPage}/>
 					<Route path='/notFound' component={NotFound} />
 					<Redirect to='/notFound' />
 				</Switch>

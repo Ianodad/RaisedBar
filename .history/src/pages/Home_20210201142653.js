@@ -38,7 +38,7 @@ class Home extends Component {
     // console.log(await cocktaildb.getCocktailDetail('11007'))
     const {data} = await cocktaildb.getByCategory('Cocktail')
     this.setState({ cocktails:data.drinks });
-    console.log(process.env)
+    // console.log(data)
 
   }
 

@@ -4,7 +4,7 @@ import client from './client'
 const endPointDetail = '/lookup.php?i='
 const endPointRandom = '/random.php'
 const endPointCategory = '/filter.php?c='
-const endPointSearch = 's='
+const endPointSearch = '/search.php?s='
 const endPointCategories =  'list.php?c=list'
 
 const getCocktailDetail = (id)=> client.get(endPointDetail+id)

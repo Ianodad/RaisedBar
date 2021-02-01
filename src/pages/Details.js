@@ -5,7 +5,7 @@ import Layout from "../component/Layout";
 class Details extends Component {
   constructor(props) {
     super(props);
-    this.state = { cocktailDetail: {} };
+    this.state = { cocktailDetail: {}, search: ''};
   }
 
   componentDidMount = async () => {
@@ -14,10 +14,11 @@ class Details extends Component {
     );
     this.setState({ cocktailDetail: data.drinks[0] });
   };
+  
 
   render() {
     const { cocktailDetail } = this.state;
-    console.log(cocktailDetail);
+    // console.log(cocktailDetail);
     return (
       <Layout className="container-fluid h-100">
         { cocktailDetail.strDrink && (<div className="row col-10 mx-auto my-auto border border-primary" style={{height:'80%', top:"20%"}}>

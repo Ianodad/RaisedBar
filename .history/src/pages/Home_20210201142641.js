@@ -38,7 +38,7 @@ class Home extends Component {
     // console.log(await cocktaildb.getCocktailDetail('11007'))
     const {data} = await cocktaildb.getByCategory('Cocktail')
     this.setState({ cocktails:data.drinks });
-    console.log(process.env)
+    // console.log(data)
 
   }
 
@@ -95,8 +95,8 @@ class Home extends Component {
       } else{
         return (
           <div className="content d-flex flex-wrap">
-                  {cocktails && cocktails.map((cocktail, i) => (
-                      <Card data={cocktail} key={i}/>
+                  {cocktails && cocktails.map((cocktail) => (
+                      <Card data={cocktail}/>
                   ))}
           </div>
         )
