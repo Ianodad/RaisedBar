@@ -134,11 +134,8 @@ class Home extends Component {
               <div className="search-bar position-absolute container" style={{top: "12%"}}>
                 <Search onSearch={this.onHandleSearch}/>
               </div>
-              <div className="yourCollection position-absolute w-100" style={{top:"31%"}}>
-                <h2 className="container-fluid">Your Collection</h2>
-                <div className="collection-holder">
-                    <CollectionView/>                    
-                </div>
+              <div className="yourCollection position-absolute" >
+                <CollectionView/>                    
               </div>
                 <div
                   className="home-bottom d-flex row position-absolute container"

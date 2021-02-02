@@ -12,7 +12,7 @@ class index extends Component {
           <nav className="nav">
             <div className="container">
               <div className="logo">
-                <a href="#" style={{color:"white"}}>RaisedBAR</a>
+                <a href="#">Your Logo</a>
               </div>
               <div id="mainListDiv" className="main_list">
                 <ul className="navlinks">

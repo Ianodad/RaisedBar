@@ -21,19 +21,16 @@ class index extends Component {
 }
     render() {
         return (
-          <div className="container" style={{top:'10%'}}>
-            <div className="card" style={{ width: "18rem" }}>
-              <div className="card-body">
-                <h5 className="card-title">NAME</h5>
-                <h6 className="card-subtitle mb-2 text-muted">Date</h6>
-                <p className="card-text">Instruction</p>
-                <a href="/#" className="card-link">
-                  View More
-                </a>
-              </div>
+            <div className="container">
+               <div class="card text-left">
+                 <img class="card-img-top" src="holder.js/100px180/" alt="">
+                 <div class="card-body">
+                   <h4 class="card-title">Title</h4>
+                   <p class="card-text">Body</p>
+                 </div>
+               </div>
             </div>
-          </div>
-        );
+        )
     }
 }
 

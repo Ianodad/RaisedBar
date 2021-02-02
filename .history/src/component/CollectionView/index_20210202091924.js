@@ -28,7 +28,7 @@ class index extends Component {
                 <h6 className="card-subtitle mb-2 text-muted">Date</h6>
                 <p className="card-text">Instruction</p>
                 <a href="/#" className="card-link">
-                  View More
+                  Card link
                 </a>
               </div>
             </div>

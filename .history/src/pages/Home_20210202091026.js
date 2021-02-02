@@ -136,9 +136,7 @@ class Home extends Component {
               </div>
               <div className="yourCollection position-absolute w-100" style={{top:"31%"}}>
                 <h2 className="container-fluid">Your Collection</h2>
-                <div className="collection-holder">
-                    <CollectionView/>                    
-                </div>
+                <CollectionView/>                    
               </div>
                 <div
                   className="home-bottom d-flex row position-absolute container"
