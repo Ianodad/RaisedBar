@@ -9,9 +9,7 @@ import Button from '../component/Common/Button/Button';
 
 import './Home.css'
 import Card from '../component/Common/showCard/Card';
-import CollectionView from '../component/CollectionView';
-import { NavLink } from "react-router-dom";
-
+import CollectionView from '../component/CollectionView'
 
 
 const customStyles = {
@@ -137,7 +135,7 @@ class Home extends Component {
                 <Search onSearch={this.onHandleSearch}/>
               </div>
               <div className="yourCollection position-absolute w-100" style={{top:"31%"}}>
-                {/* <h2 className="container-fluid">Your Collection</h2> */}
+                <h2 className="container-fluid">Your Collection</h2>
                 <div className="collection-holder">
                     {/* <CollectionView/>                     */}
                 </div>

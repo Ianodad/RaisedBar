@@ -137,7 +137,7 @@ class Home extends Component {
                 <Search onSearch={this.onHandleSearch}/>
               </div>
               <div className="yourCollection position-absolute w-100" style={{top:"31%"}}>
-                {/* <h2 className="container-fluid">Your Collection</h2> */}
+                <h2 className="container-fluid">Your Collection</h2>
                 <div className="collection-holder">
                     {/* <CollectionView/>                     */}
                 </div>
