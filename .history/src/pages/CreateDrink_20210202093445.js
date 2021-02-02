@@ -65,12 +65,12 @@ class CreateDrink extends Component {
       <Layout className="container-fluid h-100">
         <div
           className="card card-outline-secondary mx-auto"
-          style={{ top: "20%", width:"25em" }}
+          style={{ top: "20%", width:"18em" }}
         >
           <div className="card-header">
-            <h3 className="mb-0 text-center" style={{fontWeight:'900'}}>Create Drink</h3>
+            <h3 className="mb-0 text-center">Create Drink</h3>
           </div>
-          <div className="card-body mx-auto" >
+          <div className="card-body mx-auto" style={{width:"18em"}}>
             <Formik
               initialValues={{
                 drinkName: "",
@@ -97,6 +97,7 @@ class CreateDrink extends Component {
                   role="form"
                   autoComplete="off"
                   onSubmit={handleSubmit}
+                  style={{width:'18em'}}
                 >
                   <div className="form-group">
                     <label htmlFor="inputName">Name</label>

@@ -68,7 +68,7 @@ class CreateDrink extends Component {
           style={{ top: "20%", width:"25em" }}
         >
           <div className="card-header">
-            <h3 className="mb-0 text-center" style={{fontWeight:'900'}}>Create Drink</h3>
+            <h3 className="mb-0 text-center" sty>Create Drink</h3>
           </div>
           <div className="card-body mx-auto" >
             <Formik

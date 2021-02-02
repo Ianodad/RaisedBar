@@ -65,12 +65,12 @@ class CreateDrink extends Component {
       <Layout className="container-fluid h-100">
         <div
           className="card card-outline-secondary mx-auto"
-          style={{ top: "20%", width:"25em" }}
+          style={{ top: "20%", width: "30%" }}
         >
           <div className="card-header">
-            <h3 className="mb-0 text-center" style={{fontWeight:'900'}}>Create Drink</h3>
+            <h3 className="mb-0 text-center">Create Drink</h3>
           </div>
-          <div className="card-body mx-auto" >
+          <div className="card-body mx-auto">
             <Formik
               initialValues={{
                 drinkName: "",
@@ -150,7 +150,7 @@ class CreateDrink extends Component {
                       required
                     />
                   </div>
-                  {/* <div className="form-group">
+                  <div className="form-group">
                     <label for="file">File upload</label>
                     <input
                       id="file"
@@ -159,10 +159,10 @@ class CreateDrink extends Component {
                       onChange={handleChange("file")}
                       className="form-control"
                     />
-                  </div> */}
+                  </div>
                   <div className="form-group">
                     <label htmlFor="instructions">Instructions</label>
-                    <textarea
+                    <input
                       type="text"
                       className="form-control"
                       // value={values.instructions}
