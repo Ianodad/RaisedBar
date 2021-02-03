@@ -12,7 +12,7 @@ class index extends Component {
           <nav className="nav">
             <div className="container">
               <div className="logo row">
-                 <NavLink to="/">
+                 <NavLink active to="/">
                 <p href="#" style={{color:"white"}}>Raised<span className="bar-logo" style={{fontWeight:"1000", fontSize:"46px"}}>BAR</span></p>
                 <p>BAR</p>
                 </NavLink>

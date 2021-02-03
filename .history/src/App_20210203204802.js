@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 import Home from "./pages/Home";
 import Details from "./pages/Details";
-import CreateDrink from "./pages/CreateDrink"
+import CreateDrink from "./pages"
 import SearchPage from "./pages/SearchPage";
 
 

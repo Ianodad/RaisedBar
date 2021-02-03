@@ -11,16 +11,16 @@ class index extends Component {
         return (
           <nav className="nav">
             <div className="container">
-              <div className="logo row">
-                 <NavLink to="/">
-                <p href="#" style={{color:"white"}}>Raised<span className="bar-logo" style={{fontWeight:"1000", fontSize:"46px"}}>BAR</span></p>
+              <div className="logo d-flex flex row">
+                 <NavLink active to="/">
+                <p href="#" style={{color:"white"}}>Raised<span className="bar-logo" style={{fontWeight:"1000"}}>BAR</span></p>
                 <p>BAR</p>
                 </NavLink>
               </div>
               <div id="mainListDiv" className="main_list">
                 <ul className="navlinks">
                   <li>
-                    <NavLink  to="/">
+                    <NavLink active to="/">
                         <span style={{fontWeight:'1000', marginRight:"0.07em"}}>H</span>ome
                     </NavLink>
                   </li>
