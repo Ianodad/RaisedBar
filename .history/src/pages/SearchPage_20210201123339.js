@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Layout from "../component/Layout"
+import Card from '../component/Common/showCard/Card';
 
 class SearchPage extends Component {
 

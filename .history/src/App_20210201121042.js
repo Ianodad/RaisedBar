@@ -8,7 +8,7 @@ import SearchPage from "./pages/SearchPage";
 
 
 import NotFound from "./pages/NotFound";
-// import Navbar from "./component/Navbar";
+import Navbar from "./component/Navbar";
 
 
 class App extends Component {
