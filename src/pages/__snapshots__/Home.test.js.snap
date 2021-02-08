@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home/> testing component Check component renders renders Home component 1`] = `
+<index>
+  <div
+    class="container"
+  >
+    <Modal
+      ariaHideApp={true}
+      bodyOpenClassName="ReactModal__Body--open"
+      closeTimeoutMS={0}
+      contentElement={[Function]}
+      contentLabel="Example Modal"
+      isOpen={false}
+      onRequestClose={[Function]}
+      overlayElement={[Function]}
+      parentSelector={[Function]}
+      portalClassName="ReactModalPortal"
+      preventScroll={false}
+      role="dialog"
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldFocusAfterRender={true}
+      shouldReturnFocusAfterClose={true}
+      style={
+        Object {
+          "content": Object {
+            "bottom": "auto",
+            "height": "80%",
+            "left": "50%",
+            "marginRight": "-50%",
+            "right": "auto",
+            "top": "50%",
+            "transform": "translate(-50%, -50%)",
+            "width": "80%",
+          },
+        }
+      }
+    >
+      <div
+        class="container-fluid"
+      >
+        <div
+          className="modal-header row"
+        >
+          <h2
+            className="text-center col-11"
+          >
+            Cocktail Catalog
+          </h2>
+          <button
+            className="float-lg-right col-1"
+            onClick={[Function]}
+            style={
+              Object {
+                "zIndex": 4,
+              }
+            }
+          >
+            Close
+          </button>
+        </div>
+        <div
+          className="content d-flex flex-wrap"
+        >
+          <div
+            className="content d-flex flex-wrap"
+          />
+        </div>
+      </div>
+    </Modal>
+    <div
+      className="search-bar position-absolute container"
+      style={
+        Object {
+          "top": "12%",
+        }
+      }
+    >
+      <search
+        onSearch={[Function]}
+      />
+    </div>
+    <div
+      className="container-fluid yourCollection position-absolute w-100"
+      style={
+        Object {
+          "top": "31%",
+        }
+      }
+    >
+      <h2
+        className="border-bottom col-2 mx-0 px-0"
+        style={
+          Object {
+            "borderBottom": "5px",
+            "color": "white",
+            "fontSize": "2em",
+            "fontWeight": "900",
+          }
+        }
+      >
+        Your Collection
+      </h2>
+      <div
+        className="collection-holder"
+      >
+        <index />
+      </div>
+    </div>
+    <div
+      className="home-bottom d-flex row position-absolute container"
+      style={
+        Object {
+          "top": "60%",
+        }
+      }
+    >
+      <div
+        className="call-action col-md-6 col-lg-6"
+      >
+        <div
+          className="action"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          <h2>
+            View
+          </h2>
+          <h2
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "45px",
+                "fontWeight": "900",
+              }
+            }
+          >
+            Our Best Drinks
+          </h2>
+          <h2
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "50px",
+                "fontWeight": "900",
+              }
+            }
+          >
+            RAISE THE "BAR"
+          </h2>
+          <Button
+            onPress={[Function]}
+            title="View Catalog"
+          />
+        </div>
+      </div>
+      <div
+        className="create-cocktail col-md-6 col-lg-6"
+        style={
+          Object {
+            "width": "18em",
+          }
+        }
+      >
+        <div
+          className="create card col-md-5 float-right mt-4"
+        >
+          <div
+            className="create-inside flex-column inline-block"
+            style={
+              Object {
+                "marginTop": "30px",
+              }
+            }
+          >
+            <h2>
+              Create your
+            </h2>
+            <h2
+              style={
+                Object {
+                  "fontSize": "40px",
+                  "fontWeight": "900px",
+                }
+              }
+            >
+              story
+            </h2>
+            <div
+              className="create-button"
+              style={
+                Object {
+                  "marginTop": "2em",
+                }
+              }
+            >
+              <UNDEFINED
+                to="/create-drink"
+              >
+                <Button
+                  style={
+                    Object {
+                      "top": "10",
+                    }
+                  }
+                  title="Create Drink"
+                />
+              </UNDEFINED>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</index>
+`;

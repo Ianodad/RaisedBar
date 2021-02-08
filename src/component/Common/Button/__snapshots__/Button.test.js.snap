@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseButton <Button/> renders in any case 1`] = `
+<div
+  id="container"
+>
+  <button
+    className="learn-more"
+  >
+    <span
+      aria-hidden="true"
+      className="circle"
+    >
+      <span
+        className="icon arrow"
+      />
+    </span>
+    <span
+      className="button-text"
+    />
+  </button>
+</div>
+`;
+
+exports[`BaseButton <Button/> with passed props 1`] = `
+<div
+  id="container"
+>
+  <button
+    className="learn-more"
+    onClick={[MockFunction]}
+  >
+    <span
+      aria-hidden="true"
+      className="circle"
+    >
+      <span
+        className="icon arrow"
+      />
+    </span>
+    <span
+      className="button-text"
+    >
+      Start
+    </span>
+  </button>
+</div>
+`;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card/> BaseCard Snapshot renders renders <Card/> component 1`] = `
+<React.Fragment>
+  <UNDEFINED
+    to="/details/idDrink"
+  >
+    <div
+      className="profile-card-2 mx-2"
+    >
+      <img
+        className="img img-responsive"
+        src="thumb"
+      />
+      <div
+        className="profile-name"
+      >
+        Drink
+      </div>
+      <div
+        className="profile-username"
+      >
+        Drink
+      </div>
+      <div
+        className="profile-icons"
+      >
+        <a
+          href="#"
+        >
+          <i
+            className="fa fa-facebook"
+          />
+        </a>
+        <a
+          href="#"
+        >
+          <i
+            className="fa fa-twitter"
+          />
+        </a>
+        <a
+          href="#"
+        >
+          <i
+            className="fa fa-linkedin"
+          />
+        </a>
+      </div>
+    </div>
+  </UNDEFINED>
+</React.Fragment>
+`;

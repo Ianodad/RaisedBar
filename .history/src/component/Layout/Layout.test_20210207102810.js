@@ -1,0 +1,34 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import Layout from './index';
+
+describe("BaseButton", () => {
+  // Start snapshot test
+  it("<Button/> renders in any case", () => {
+    const tree = renderer.create(<Button />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("<Button/> with passed props", () => {
+    const onPress = jest.fn();
+
+    const tree = renderer
+      .create(<Button title="Start" onPress={onPress} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  // End snapshot test
+
+  // action testing
+  describe("when user clicks button", () => {
+    test("button renders with correct text", () => {
+      const { queryByText, rerender } = render(<Button {...defaultProps} />);
+      expect(queryByText("Submit")).toBeTruthy();
+
+      // Change props
+      rerender(<Button {...defaultProps} title="Go" />);
+      expect(queryByText("Go")).toBeTruthy();
+    });
+  });
+});

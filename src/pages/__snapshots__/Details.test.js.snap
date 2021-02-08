@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Details/> testing component Check component renders renders Home component 1`] = `
+<index
+  className="container-fluid h-100"
+/>
+`;
+
+exports[`<Details/> testing component Check component renders renders Home component 2`] = `
+<index
+  className="container-fluid h-100"
+/>
+`;
+
+exports[`<Details/> testing component Check component renders renders Home components with props 1`] = `
+<index
+  className="container-fluid h-100"
+/>
+`;
